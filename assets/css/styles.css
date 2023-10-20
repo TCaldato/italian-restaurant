@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Kalam&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Kalam', cursive;
 }
 
 /* Containers */
@@ -41,7 +40,7 @@ body {
 }
 
 .content-container {
-    padding-top: 75px;
+    padding-top: 45px;
     padding-bottom: 75px;
 }
 
@@ -62,6 +61,8 @@ body {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.25);
     border: 0;
+    font-size: 20px;
+    padding-right: 10px;
 }
 
 .navbar .navbar-toggler {
@@ -71,10 +72,14 @@ body {
 .navbar .navbar-brand {
     font-weight: bold;
     margin-left: 16px;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 35px;
+    letter-spacing: 2px;
 }
 
-.navbar .navbar-nav a {
-    font-weight: bold;
+.nav-link {
+    margin-left: 15px;
+    letter-spacing: 2px;
 }
 
 
@@ -96,3 +101,111 @@ body {
     margin: 25px 0;
 }
 
+/* Block dividers */
+
+.block-divider {
+    width: 75px;
+    height: 5px;
+    border: 0;
+    background-color: #444;
+}
+
+.block-divider--white {
+    background-color: white;
+}
+
+.block-divider--short {
+    width: 35px;
+}
+
+/* Buttons */
+
+.btn--cta {
+    font-weight: bold;
+    border-radius: 23px;
+    width: 160px;
+}
+
+/* Alert */
+
+.alert-container .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.site-wide-alert {
+    color: #544600;
+    background-color: #eec802;
+    border-color: #eec802;
+    padding: 5px 15px;
+    margin-bottom: 0;
+    border: 1px solid transparent;
+    border-radius: 0;
+}
+
+/* Page Headers */
+
+.page-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+
+.page-header h2 {
+    margin-top: 0;
+}
+
+/* -----------------Our Story */
+
+.story-title {
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    margin: 0;
+    font-size: 40px;
+}
+
+.story-title-line {   
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 283px;
+    height: 20px;
+    top: 100%;
+    left: 1rem;
+}
+
+.story-text p {
+    font-family: 'Kalam', cursive;
+    font-size: 16px;
+}
+
+.page-header {
+    margin-bottom: 25px;
+}
+
+.our-food-img {
+    max-width: 90%;
+    height: auto;    
+}
+
+.food-pad-marg {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3%;
+}
+
+.food-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+@media (max-width: 767.98px) { 
+    .justify-content-start, .justify-content-end {
+        justify-content: center !important;
+    }
+
+}
