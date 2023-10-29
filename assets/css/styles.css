@@ -201,7 +201,45 @@ body {
     text-align: center;
 }
 
+/* Features */
 
+.feature {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature i {
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.feature .btn {
+    background-color: white;
+    border-color: white;
+    border-radius: 15px;
+    min-width: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #f05f40;
+}
+
+.dinner-menu {
+    background-color: white;
+    color: black;
+    border: 1px solid gray;
+    margin: 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.dinner-menu:hover {
+    background-color: gray;
+    color: #fff;
+}
 
 @media (max-width: 767.98px) { 
     .justify-content-start, .justify-content-end {
