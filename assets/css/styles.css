@@ -41,7 +41,7 @@ body {
 
 .content-container {
     padding-top: 45px;
-    padding-bottom: 75px;
+    padding-bottom: 45px;
 }
 
 /* Navbar */
@@ -72,7 +72,7 @@ body {
 .navbar .navbar-brand {
     font-weight: bold;
     margin-left: 16px;
-    color: rgba(255, 255, 255, 0.55);
+    color: white;
     font-size: 35px;
     letter-spacing: 2px;
 }
@@ -80,6 +80,7 @@ body {
 .nav-link {
     margin-left: 15px;
     letter-spacing: 2px;
+    color: #fff;
 }
 
 
@@ -89,61 +90,26 @@ body {
     background-color: transparent;
 }
 
-.jumbotron h1 {
-    color: white;
+.jumbotron-header {
+    color: #f3f3f3;
     font-weight: bold;
-    margin-bottom: 30px;
-    color: white;
+    font-size: 45px;
 }
 
 .jumbotron .lead {
     color: #fff;
-    margin: 25px 0;
 }
 
 /* Block dividers */
 
 .block-divider {
-    width: 75px;
+    width:875px;
     height: 5px;
     border: 0;
-    background-color: #444;
+    background-color: #fff;
 }
 
-.block-divider--white {
-    background-color: white;
-}
-
-.block-divider--short {
-    width: 35px;
-}
-
-/* Buttons */
-
-.btn--cta {
-    font-weight: bold;
-    border-radius: 23px;
-    width: 160px;
-}
-
-/* Alert */
-
-.alert-container .col-12 {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.site-wide-alert {
-    color: #544600;
-    background-color: #eec802;
-    border-color: #eec802;
-    padding: 5px 15px;
-    margin-bottom: 0;
-    border: 1px solid transparent;
-    border-radius: 0;
-}
-
-/* Page Headers */
+/*-----------------Page Headers */
 
 .page-header {
     margin-bottom: 0;
@@ -183,6 +149,8 @@ body {
     margin-bottom: 25px;
 }
 
+/* -----------------Our Food */
+
 .our-food-img {
     max-width: 90%;
     height: auto;    
@@ -199,29 +167,6 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-/* Features */
-
-.feature {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.feature i {
-    margin-bottom: 20px;
-    font-size: 45px;
-    line-height: 45px;
-}
-
-.feature .btn {
-    background-color: white;
-    border-color: white;
-    border-radius: 15px;
-    min-width: 100px;
-    font-weight: bold;
-    margin-top: 10px;
-    color: #f05f40;
 }
 
 .dinner-menu {
@@ -241,9 +186,52 @@ body {
     color: #fff;
 }
 
+/*----------------------Footer*/
+
+footer {
+    background-color: #525252;
+    color: #fafafa;
+    min-height: 120px;
+    margin: 0;
+}
+
+.centralize-content{
+    text-align: center
+}
+
+h3 {
+    font-family: 'Dancing Script', cursive;
+}
+
+.social-links {
+    padding-bottom: 15px;
+}
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: #e84610;
+}
+
+/*----------------------Media Query*/
+
 @media (max-width: 767.98px) { 
     .justify-content-start, .justify-content-end {
         justify-content: center !important;
-    }
+    }    
 
 }
